@@ -56,7 +56,7 @@
       ]
     },
     {
-      "operatingsystem": "Windows",
+      "operatingsystem": "windows",
       "operatingsystemrelease": [
         "Server 2003",
         "Server 2003 R2",

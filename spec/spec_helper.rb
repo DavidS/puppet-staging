@@ -21,8 +21,8 @@ end
 
 RSpec.configure do |c|
   default_facts = {
-    puppetversion: Puppet.version,
-    facterversion: Facter.version
+    staging_http_get: 'curl',
+    staging_windir: 'C:\\ProgramData\\staging',
   }
   default_facts.merge!(YAML.load(File.read(File.expand_path('../default_facts.yml', __FILE__)))) if File.exist?(File.expand_path('../default_facts.yml', __FILE__))
   default_facts.merge!(YAML.load(File.read(File.expand_path('../default_module_facts.yml', __FILE__)))) if File.exist?(File.expand_path('../default_module_facts.yml', __FILE__))
